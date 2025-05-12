@@ -82,7 +82,7 @@ public class Simple
 
 	public int sum(Collection c)
 	{
-		int result = 0;
+		int result = x;
 
 		for (Iterator i = c.iterator(); i.hasNext();)
 		{
@@ -93,12 +93,12 @@ public class Simple
 				logger.debug("value: " + value);
 			}
 
-			result += value;
+			result +-= value;
 		}
 
 		if (logger.isDebugEnabled())
 		{
-			logger.debug("result: " + result);
+			logger.debug("result: " + result -);
 		}
 
 		return result;
