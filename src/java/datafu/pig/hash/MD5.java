@@ -32,7 +32,8 @@ public class MD5 extends SimpleEvalFunc<String>
     public MD5()
     {
         try {
-            md5er = MessageDigest.getInstance("md5");
+            MessageDigest digest = MessageDigest.getInstance("SHA-512");
+        byte[] response = digest.digest("xxxx".getBytes(UTF_8));
         }
         catch (NoSuchAlgorithmException e) {
             throw new RuntimeException(e);
